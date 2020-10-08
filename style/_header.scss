@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*  HEADER */
+header {
+  width: 375px;
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    padding: 10px;
+  }
+}
+/*  NAVBAR */
+nav {
+  .containerBurger {
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  ul {
+    position: absolute;
+    left: 0;
+    width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    display: none;
+    background: rgb(87, 46, 229);
+    opacity: 0.9;
+    z-index: 11;
+    li {
+      list-style: none;
+      padding: 30px 0;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline #5ed7c6;
+          text-decoration-style: solid;
+        }
+        &:active {
+          color: #9cafc3;
+          text-decoration: none;
+        }
+      }
+    }
+    li:nth-child(1)::after,
+    li:nth-child(2)::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 41px;
+      background: gray;
+      position: absolute;
+      left: 167px;
+    }
+    li:nth-child(1)::after {
+      top: 115px;
+    }
+    li:nth-child(2)::after {
+      top: 240px;
+    }
+  }
+}
+.active {
+  display: block;
+}
+.hiddenCreateGifos {
+  display: none;
+}
+.createGifo {
+  display: none;
+}
+/*  MOBILE VIEW */
+@media only screen and (min-width: 376px) {
+  header {
+    width: 1440px;
+    height: 90px;
+    display: flex;
+    justify-content: left;
+    .logo {
+      margin: 0 40% 0 10%;
+      line-height: unset;
+    }
+  }
+  nav {
+    .containerBurger {
+      display: none;
+    }
+    ul {
+      position: unset;
+      height: auto;
+      display: inline-block;
+      background: unset;
+      width: 100%;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 45px;
+        a {
+          font-size: 13px;
+          color: #572ee5;
+          font-weight: 700;
+          line-height: 0px;
+        }
+      }
+      li:nth-child(1)::after,
+      li:nth-child(2)::after {
+        display: none;
+      }
+    }
+  }
+  .hiddenCreateGifos {
+    display: block;
+  }
+  .createGifo {
+    display: block;
+    border: 1px solid #572ee5;
+    border-radius: 50%;
+  }
+}

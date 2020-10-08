@@ -1,0 +1,63 @@
+/*  MI GIFOS SECTION */
+.myGifos {
+  width: 375px;
+  height: 860px;
+  text-align: center;
+  .iconGifos {
+    width: 23px;
+    height: 21px;
+  }
+  .imagesGeneral {
+    grid-template-rows: 120px 120px 120px 120px;
+  }
+  h2 {
+    width: 375px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  #textFirstGifo {
+    font-family: $fontMonserrat;
+    font-weight: 700;
+    font-size: 22px;
+    color: #50e3c2;
+  }
+}
+/*  MOBILE VIEW */
+@media only screen and (min-width: 376px) {
+  .myGifos {
+    width: 1440px;
+    height: 748px;
+    .iconGifos {
+      width: 24px;
+      height: 21.9px;
+    }
+    h2 {
+      width: 550px;
+      height: 30px;
+      margin: auto;
+      font-size: 25px;
+    }
+    .imagesGeneral {
+      grid-template-rows: 200px 200px;
+    }
+    .firstMyGifo {
+      height: 690px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align: center;
+        margin: 0 auto;
+        color: #50e3c2;
+        width: 431px;
+        height: 66px;
+        padding: 24px 0 137px 0;
+        font-family: $fontMonserrat;
+        font-weight: 700;
+      }
+    }
+  }
+}

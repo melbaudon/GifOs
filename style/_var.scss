@@ -1,0 +1,391 @@
+/* VARIABLES */
+$fontMonserrat: "Montserrat", sans-serif;
+$fontRoboto: "Roboto", sans-serif;
+
+/*  GENERAL */
+h1 {
+  font-family: $fontMonserrat;
+  font-size: 25px;
+  color: #572ee5;
+  text-align: center;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $fontMonserrat;
+  color: #572ee5;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-family: $fontRoboto;
+  color: #000000;
+  text-align: center;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+a {
+  font-family: $fontMonserrat;
+  text-align: center;
+  line-height: 60px;
+}
+
+.edgePage {
+  background: #572ee5;
+  width: 375px;
+  height: 5px;
+  position: relative;
+}
+
+.buttonGeneral {
+  width: 127px;
+  height: 50px;
+  border: 1px #572ee5 solid;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  outline: none !important;
+  font-family: $fontMonserrat;
+  font-size: 13px;
+  font-weight: 700;
+  color: #572ee5;
+}
+
+.buttonGeneral:hover {
+  background: #572ee5;
+  color: #ffffff;
+}
+
+.imagesGeneral {
+  margin: 46px 21px 78px 21px;
+  display: grid;
+  grid-template-columns: 156px 156px;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px;
+  gap: 25px 21px;
+  img {
+    width: 156px;
+    height: 120px;
+  }
+}
+
+.iconsHover {
+  width: 375px;
+  .containerImg {
+    position: relative;
+    .icon {
+      width: 10px;
+      height: 10px;
+      padding: 5px;
+      position: absolute;
+      background: #ffffff;
+      border-radius: 6px;
+      z-index: 10;
+      display: none;
+      cursor: pointer;
+    }
+    .pUser,
+    .pTitle {
+      display: none;
+      position: absolute;
+      color: #ffffff;
+    }
+    .icon:hover {
+      opacity: 0.7;
+      background: #c0c0c0;
+      border-radius: 6px;
+    }
+  }
+  .imgHover:hover {
+    background-color: #572ee5;
+    img:nth-child(1) {
+      opacity: 0.3;
+      background-color: #572ee5;
+    }
+    .imgFavorite {
+      top: 10px;
+      right: 70px;
+      display: block;
+    }
+    .imgFavorite:active {
+      content: url("./img/icon-fav-active.svg");
+    }
+    .imgDownload {
+      top: 10px;
+      right: 40px;
+      display: block;
+    }
+    .imgFullSize {
+      top: 10px;
+      right: 10px;
+      display: block;
+    }
+    .pUser {
+      top: 60px;
+      left: 12px;
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left;
+    }
+    .pTitle {
+      top: 80px;
+      left: 12px;
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      text-align: left;
+      line-height: 1;
+    }
+  }
+}
+
+.active {
+  background: #572ee5;
+  color: #ffffff !important;
+}
+/*  NIGHT THEME */
+.changeTheme {
+  background: #37383c;
+  .active {
+    background: #000000;
+  }
+  .trending {
+    background: #222326;
+  }
+  h1,
+  h2,
+  p,
+  a {
+    color: #ffffff;
+  }
+  i:hover {
+    color: #ffffff;
+  }
+  nav {
+    ul {
+      background: #000000;
+      li a {
+        &:hover {
+          text-decoration: underline #5ed7c6;
+          text-decoration-style: solid;
+        }
+        &:active {
+          color: #9cafc3;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .edgePage {
+    background: #000000;
+  }
+  .search {
+    p {
+      color: #ffffff;
+    }
+    .buttonSearch {
+      background: #37383c;
+      button {
+        background: #37383c;
+      }
+      input {
+        color: #6b7989;
+        background: #37383c;
+      }
+    }
+  }
+  .buttonGeneral {
+    background: #37383c;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-family: $fontMonserrat;
+  }
+  .buttonGeneral:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  .createGifo {
+    background: #ffffff;
+    &:active {
+      background: #9cafc3;
+    }
+  }
+  .search .buttonSearch .containerInpImg button {
+    background-color: unset;
+  }
+  .styleDivText p {
+    color: #000000;
+  }
+  .trending .containerCarouselTrending .btnBack:hover,
+  .trending .containerCarouselTrending .btnNext:hover {
+    background: #ffffff;
+  }
+  .createGifos .page span {
+    font-family: $fontRoboto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .createGifos {
+    .page {
+      p {
+        color: #ffffff;
+      }
+      span:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  }
+  .styleFullScreen {
+    background: rgba(55, 56, 60, 0.9);
+    .styleDivText p {
+      color: #ffffff;
+    }
+  }
+  .btnBack:hover,
+  .btnNext:hover {
+    background: #ffffff;
+  }
+  .buttonSearch {
+    border: 1px solid #ffffff !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.btnBack,
+.btnNext {
+  display: none;
+}
+
+/*  MOBILE VIEW */
+
+@media only screen and (min-width: 376px) {
+  .edgePage {
+    width: 1440px;
+  }
+  .imagesGeneral {
+    margin: 36px 156px 78px 157px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 29px 29px;
+    img {
+      width: 260px;
+      height: 200px;
+    }
+  }
+  .changeTheme {
+    nav {
+      ul {
+        background: #37383c;
+      }
+    }
+    .active {
+      background: #37383c;
+    }
+    .btnBack,
+    .btnNext {
+      background: #222326;
+      border-color: #000000 !important;
+    }
+    .btnBack:hover,
+    .btnNext:hover {
+      background: #ffffff;
+    }
+  }
+  .btnBack,
+  .btnNext {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 16px;
+    border: 1px solid #572ee5;
+    cursor: pointer;
+  }
+  .btnBack:hover {
+    background-image: url("./img/Button-Slider-left-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: 100%;
+    border: 0;
+  }
+  .btnNext:hover {
+    background-image: url("./img/Button-Slider-right-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: 100%;
+    border: 0;
+  }
+  .active {
+    background: #ffffff;
+    color: #572ee5;
+  }
+  .iconsHover {
+    .containerImg {
+      position: relative;
+      .icon {
+        width: 17px;
+        height: 17px;
+        padding: 10px;
+        position: absolute;
+        background: #ffffff;
+        border-radius: 6px;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+      }
+    }
+    .imgHover:hover {
+      background-color: #572ee5;
+      img:nth-child(1) {
+        opacity: 0.3;
+        background-color: #572ee5;
+      }
+      .imgFavorite {
+        top: 10px;
+        right: 95px;
+        display: block;
+      }
+      .imgFavorite:active {
+        content: url("./img/icon-fav-active.svg");
+      }
+      .imgDownload {
+        top: 10px;
+        right: 52px;
+        display: block;
+      }
+      .imgFullSize {
+        top: 10px;
+        right: 10px;
+        display: block;
+      }
+      .pUser {
+        top: 121px;
+        left: 12px;
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+      }
+      .pTitle {
+        top: 143px;
+        left: 12px;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+      }
+    }
+  }
+}

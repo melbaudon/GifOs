@@ -1,0 +1,66 @@
+/*  FAVORITES SECTION */
+.favorites {
+  width: 375px;
+  height: 1151px;
+  .iconFavorites {
+    width: 28px;
+    height: 21px;
+    display: flex;
+    margin: auto;
+  }
+  h2 {
+    width: 375px;
+    height: 29px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .saveFirstGifoHidden {
+    display: none;
+  }
+  .saveFirstGifoVisible {
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .outImgFav {
+    display: none;
+  }
+  .buttonGeneralHidden {
+    display: none;
+  }
+}
+/*  MOBILE VIEW */
+@media only screen and (min-width: 376px) {
+  main {
+    .favorites {
+      width: 1440px;
+      height: 981px;
+      h2 {
+        width: 549px;
+        height: 30px;
+        margin: 0 auto;
+        font-size: 25px;
+      }
+      .iconFavorites {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .buttonGeneral {
+        margin: 78px 656px 79px 657px;
+      }
+      p {
+        text-align: center;
+        margin: 0 auto;
+        color: #50e3c2;
+        width: 431px;
+        height: 66px;
+        padding: 24px 0 137px 0;
+        font-weight: 700;
+        font-family: $fontMonserrat;
+        font-size: 22px;
+      }
+    }
+  }
+}

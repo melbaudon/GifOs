@@ -1,0 +1,131 @@
+/*  CREATE GIFOS SECTION */
+.createGifos {
+  height: 572px;
+  width: 1440px;
+  .cam {
+    height: 390px;
+    display: flex;
+    justify-content: start;
+
+    img:nth-child(1) {
+      margin-left: 156px;
+    }
+    img:nth-child(2) {
+      margin-right: 4px;
+    }
+    .camLoad {
+      width: 688px;
+      height: 390px;
+      border: 1px solid #572ee5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      h2 {
+        font-size: 25px;
+        span {
+          color: #50e3c2;
+        }
+      }
+      p {
+        font-size: 16px;
+      }
+      video {
+        display: none;
+      }
+    }
+    .upRecord {
+      background: rgba(86, 46, 229, 0.9);
+      width: 480px;
+      height: 320px;
+      position: absolute;
+      left: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .iconCreateGifos {
+        margin-bottom: 20px;
+        margin-left: 0;
+      }
+      .textCreateGifos {
+        display: block;
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+  .page {
+    height: 88px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #572ee5;
+    span {
+      width: 11px;
+      height: 21px;
+      padding: 5px 10px;
+      border: 1px solid #572ee5;
+      border-radius: 50%;
+      text-align: center;
+      &:hover {
+        background: #572ee5;
+        color: #ffffff;
+      }
+    }
+    span:nth-child(1),
+    span:nth-child(2) {
+      margin-right: 25px;
+    }
+    span:nth-child(3) {
+      margin-right: 138px;
+    }
+    p {
+      width: 131px;
+      height: 16px;
+      margin-right: 67px;
+      font-size: 15px;
+      font-family: $fontMonserrat;
+      font-weight: 700;
+      color: #572ee5;
+    }
+    img {
+      margin-right: 167px;
+    }
+  }
+  .separator {
+    width: 796px;
+    height: 7px;
+    background: #572ee5;
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  #btnStart {
+    margin-top: 20px;
+  }
+}
+
+.camLoadHidden {
+  h2,
+  p {
+    display: none;
+  }
+  video {
+    display: block !important;
+    width: 480px;
+    height: 320px;
+    margin: 0 auto;
+  }
+}
+
+.activeNum {
+  background: #572ee5;
+
+  color: #ffffff;
+}
+
+#timer {
+  font-size: 13px;
+  text-decoration: underline #5ed7c6;
+  text-decoration-style: solid;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Gifos</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style/style.css" />
+    <!--GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/ee5dde9508.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="edgePage"></div>
+    <!--START HEADER SECTION-->
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="img/logo-desktop.svg" id="logo" alt="Image logo"
+      /></a>
+      <nav>
+        <!--BURGER MENU-->
+        <div class="containerBurger">
+          <img
+            src="img/burger.svg"
+            class="menu"
+            id="navBar"
+            alt="Image burguer menu"
+          />
+          <img
+            src="img/button-close.svg"
+            class="hidden"
+            id="navBarClose"
+            alt="Image close menu "
+          />
+        </div>
+        <!--NAVBAR-->
+        <ul id="ulNavBar">
+          <li><a href="#" id="theme">MODO NOCTURNO</a></li>
+          <li><a href="favorites.html">FAVORITOS</a></li>
+          <li><a href="myGifos.html">MIS GIFOS</a></li>
+        </ul>
+      </nav>
+      <a href="createGifos.html" class="hiddenCreateGifos">
+        <img
+          src="img/button-crear-gifo.svg"
+          class="createGifo"
+          alt="Image create gifos"
+        />
+      </a>
+    </header>
+    <!--END HEADER SECTION-->
+    <!--START MAIN SECTION-->
+    <main>
+      <section class="search" id="sectionMain">
+        <h1 id="titleSearch">
+          Inspírate, busca, guarda, y crea <span>los mejores</span>
+          <span>GIFOS</span>
+        </h1>
+        <!--SEARCH-->
+        <div class="contentSearch">
+          <img
+            src="img/ilustra_header.svg"
+            id="familySearch"
+            alt="Image family"
+          />
+          <div class="buttonSearch">
+            <div class="containerInpImg" id="containerInpImg">
+              <input type="text" id="search" placeholder="Busca GIFOS y más" />
+              <button id="btnSearch">
+                <img
+                  src="img/icon-search.svg"
+                  id="imgBtnSearch"
+                  alt="Icon search"
+                />
+              </button>
+              <button id="btnClose" class="btnCloseHidden">
+                <img src="img/close.svg" id="imgCloseSearch" alt="Icon close" />
+              </button>
+            </div>
+            <ul id="ulSearch"></ul>
+          </div>
+        </div>
+        <h2 id="subtitleTrending">Trending:</h2>
+        <p id="descriptionTrending">
+          Reactions, Entertainment, <span>Sports, Stickers, Artists</span>
+        </p>
+      </section>
+      <div id="noFound" class="hidden">
+        <h2 id="noFoundH2"></h2>
+        <img src="img/icon-busqueda-sin-resultado.svg" alt="Icon no result" />
+        <p>Intenta con otra búsqueda.</p>
+      </div>
+      <section class="pets iconsHover hidden" id="sectionSearch">
+        <h2 id="h2SectionSearch"></h2>
+        <div class="imagesGeneral" id="searchIndex"></div>
+        <button class="buttonGeneral" id="btnSeeMore">VER MAS</button>
+        <div id="divFullScreen" class="hidden"></div>
+      </section>
+      <!--TRENDING SECTION-->
+      <section class="trending iconsHover">
+        <h2>Trending GIFOS</h2>
+        <p>Mira los últimos <span> GIFO de nuestra comunidad.</span></p>
+        <div class="containerCarouselTrending">
+          <img
+            class="btnBack"
+            id="btnBack"
+            src="img/button-left.svg"
+            alt="Image back button"
+          />
+          <div class="imgTrending" id="sectionTrending"></div>
+          <img
+            class="btnNext"
+            id="btnNext"
+            src="img/button-right.svg"
+            alt="Image next button"
+          />
+        </div>
+      </section>
+    </main>
+    <!--END MAIN SECTION-->
+    <!--START FOOTER SECTION-->
+    <footer>
+      <!--SOCIAL MEDIA-->
+      <p>Compartir en:</p>
+      <div>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook-f" alt="Icon Facebook"></i
+        ></a>
+        <a href="https://twitter.com/home" target="_blank"
+          ><i class="fab fa-twitter" alt="Icon Twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/?hl=es" target="_blank"
+          ><i class="fab fa-instagram" alt="Icon Instagram"></i
+        ></a>
+      </div>
+      <p>© GIFOS 2020 All Rights Reserved</p>
+    </footer>
+    <div class="edgePage"></div>
+    <!--JAVASCRIPT-->
+    <script src="js/index.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/trending.js"></script>
+    <!--END FOOTER SECTION-->
+  </body>
+</html>
